@@ -7,7 +7,7 @@ const randomUser = (async () => {
 
         results.forEach((e, i) => {
             let img = document.createElement('img');
-            img.setAttribute('src', `${e.picture.thumbnail}`);
+            img.setAttribute('src', `${e.picture.medium}`);
             document.getElementById('user-data').appendChild(img);
             let p1 = document.createElement('p');
             document.getElementById('user-data').appendChild(p1);
