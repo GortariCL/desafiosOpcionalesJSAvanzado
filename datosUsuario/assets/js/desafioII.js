@@ -4,6 +4,7 @@ const randomUser = (async () => {
     try {
         const response = await fetch(url);
         const { results } = await response.json();
+        document.getElementById('user-data').setAttribute('class', 'ps-1');
 
         results.forEach((e, i) => {
             let img = document.createElement('img');
