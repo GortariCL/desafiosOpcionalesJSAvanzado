@@ -21,7 +21,7 @@ const randomUser = (async () => {
             p3.innerHTML = `${e.phone}`;
         });
     } catch(e) {
-        ('no se puede obtener la informacion')
+        console.log('no se puede obtener la informacion')
         console.log(`Error: ${e}`);
     }
 })();
